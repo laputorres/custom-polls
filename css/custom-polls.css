@@ -1,0 +1,230 @@
+
+.poll-card__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    box-shadow: 0 5px 30px rgba(7, 36, 86, 0.075);
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    position: relative;
+    margin: 5vh 0;
+   
+  }
+  
+  .poll-card {
+    /* display: none; */
+    padding: 20px;
+    
+    width: 100%;
+    text-align: center;
+  }
+  
+  .poll-card h3 {
+    font-size: 2rem;
+    color: rgba(15,23,39,.65);
+  }
+
+  .poll-card form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 50px;
+  }
+
+  .poll-answer-container{
+    width: 50%;
+    margin: 5% 0;
+  }
+  
+  .poll-answer-button {
+    background-color: #ddd;
+    background-size: 100% 100%;
+    /*Ajustaeltamañodelfondo*/background-repeat: no-repeat;
+    transition: background 0.3s;
+    /*Agregaunatransiciónsuavealcambiarelfondo*/font-size: 1.1rem;
+    padding: 15px 15px;
+    border-radius: 10px;
+    font-weight: 500;
+   width: 90%;
+   border: 1px solid #c9c9c9;
+   cursor: pointer;
+}
+
+.poll-answer-button:disabled{
+    opacity: 1;
+    cursor: default;
+    color: rgb(15 23 39 / 82%);
+    
+}
+
+  
+  .poll-answer-button:hover {
+    background-color: #c9c9c9;
+  }
+  
+  .poll-answer-percentage {
+    font-size: 14px;
+    color: #888;
+    display: none;
+  }
+  
+  .total-votes-count {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #28e2d9;
+  }
+  
+
+.edit-button,
+.delete-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #0073aa;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.edit-button {
+    margin-right: 10px;
+    background-color: #0addd4;
+}
+
+.delete-button {
+    background-color: #f44336;
+}
+
+
+.poll-navigation{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+    padding: 0 20px;
+}
+
+.prev-poll-button{
+    padding: 15px 20px;
+    border-radius: 30px;
+    color: white;
+   
+    background: #b34ebe;
+    font-size: 1.125rem;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+.next-poll-button{
+    padding: 15px 20px;
+    border-radius: 30px;
+    color: white;
+   
+    font-size: 1.125rem;
+    font-weight: 500;
+    background: rgb(179, 78, 190);
+    border: none;
+    cursor: pointer;
+}
+
+
+
+/* Dashboard Pages */
+
+.container-post_polls{
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.container-post_polls h3{
+    width: 100%;
+    font-size: 2rem;
+    margin-bottom: 12px;
+    margin-bottom: 2vh;
+}
+
+.poll-card_dashboard{
+    border: 1px solid #bbb;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25%;
+}
+
+.card-author{
+    font-size: 1rem;
+    width: 100%;
+}
+
+.poll-question{
+    font-size: 1.5rem;
+    margin: 0;
+    font-weight: 500;
+}
+
+.poll-answers{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 20px 0 0 0;
+}
+
+.poll-answers li{
+    margin-bottom: 6px;
+    background: #ddd;
+    padding: 5px;
+    font-size: 1.2rem;
+    list-style: none;
+    text-align: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.poll-answers li input{
+  border: none;
+}
+
+/* USER DASHBOARD FRONTEND */
+
+.container-user_poll{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 5vh 0;
+  
+}
+
+.container-user_poll h3{
+  width: 100%;
+  color: #b34ebe;
+}
+
+
+.poll-card-user{
+  background-color: #f4f4f4;
+  padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    margin: 1vh 0;
+    flex-direction: column;
+    align-items: center;
+}
+
+.poll-question{
+  font-size: 1.5rem !important;
+    font-weight: 500;
+}
